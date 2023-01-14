@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-readingmood-main-151236-unauthRole",
       "StackName": "amplify-readingmood-main-151236",
       "StackId": "arn:aws:cloudformation:us-east-1:161314892183:stack/amplify-readingmood-main-151236/1e1b8880-940d-11ed-8f2e-127d95766a5f",
-      "AmplifyAppId": "d4durest21gz"
+      "AmplifyAppId": "d4durest21gz",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-readingmood-main-151236-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "hosting": {
@@ -17,6 +18,18 @@
           "appId": "d4durest21gz",
           "type": "cicd"
         }
+      },
+      "function": {
+        "readingmoodGetSongs": {
+          "deploymentBucketName": "amplify-readingmood-main-151236-deployment",
+          "s3Key": "amplify-builds/readingmoodGetSongs-6e6b764f2b4278564c4a-build.zip"
+        }
+      },
+      "auth": {
+        "readingmood": {}
+      },
+      "api": {
+        "songApi": {}
       }
     }
   }
