@@ -43,6 +43,10 @@ const Home: NextPage = () => {
       }
       return;
     }
+    if (response.status === 500) {
+      setError('Uh-oh, you broke it!');
+      return;
+    }
     setError('');
     const choices: string[] = data.data.choices;
     setSongs(choices);

@@ -116,7 +116,10 @@ export default async function handler(req: NextApiRequest,
       choices,
       reason,
     };
-  } catch (e) { }
+  } catch (e) {
+    res.status(500).json({ error: e });
+    return;
+  }
   // @ts-ignore
   // answerMap[bookName] = responseData;
   res.status(200).json({ data: responseData })
