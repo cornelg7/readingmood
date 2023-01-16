@@ -117,7 +117,7 @@ export default async function handler(req: NextApiRequest,
       reason,
     };
   } catch (e) {
-    res.status(500).json({ error: e, key: process.env.SUPER_SECRET_KEY });
+    res.status(500).json({ error: e, secretKey: process.env.SUPER_SECRET_KEY });
     return;
   }
   // @ts-ignore

@@ -13,5 +13,11 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  env: {
+    // @ts-ignore
+    OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+    // @ts-ignore
+    SUPER_SECRET_KEY: process.env.SUPER_SECRET_KEY,
+  }
 };
 export default config;
