@@ -64,11 +64,11 @@ export default async function handler(req: NextApiRequest,
     });
     // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
     if (!response?.data?.choices?.length) {
-      throw new Error('Something went wrong');
+      throw new Error('Something went wrong 1');
     }
     const value = response.data.choices[0]?.text;
     if (!value) {
-      throw new Error('Something went wrong');
+      throw new Error('Something went wrong 2');
     }
 
     if (value === ' Unknown' || value === 'Unknown') {
