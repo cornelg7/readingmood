@@ -12,8 +12,8 @@ const defaultAnswer = {
   choices: ["\"Lonely\" by Akdong Musician","\"The Day\" by BTS","\"The Moon Represents My Heart\" by Teresa Teng","\"The Sun\" by IU","and \"The End of the World\" by Billie Eilish"],
   reason: 'these songs all capture the themes of loneliness, despair, and longing that are present in the book'
 };
-const answerMap = {};
-let count = 0;
+// const answerMap = {};
+// let count = 0;
 
 export default async function handler(req: NextApiRequest,
                                 res: NextApiResponse) {
@@ -34,19 +34,19 @@ export default async function handler(req: NextApiRequest,
     return (word[0] as string).toUpperCase() + word.substring(1);
   }).join(" ");
 
-  console.log('bookName', bookName);
-  count += 1;
-  if (count > 10) {
-    console.log(answerMap);
-    count = 0;
-  }
+  // console.log('bookName', bookName);
+  // count += 1;
+  // if (count > 10) {
+  //   console.log(answerMap);
+  //   count = 0;
+  // }
 
   // @ts-ignore
-  if (!!answerMap[bookName]) {
-    // @ts-ignore
-    res.status(200).json({ data: answerMap[bookName] });
-    return;
-  }
+  // if (!!answerMap[bookName]) {
+  //   // @ts-ignore
+  //   res.status(200).json({ data: answerMap[bookName] });
+  //   return;
+  // }
 
   let responseData = defaultAnswer;
   try {
@@ -118,6 +118,6 @@ export default async function handler(req: NextApiRequest,
     };
   } catch (e) { }
   // @ts-ignore
-  answerMap[bookName] = responseData;
+  // answerMap[bookName] = responseData;
   res.status(200).json({ data: responseData })
 }
