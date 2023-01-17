@@ -1,3 +1,4 @@
 **/*.js
 
 src\models
+src/ui-components/*
