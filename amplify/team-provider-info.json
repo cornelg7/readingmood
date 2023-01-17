@@ -25,11 +25,11 @@
           "s3Key": "amplify-builds/readingmoodGetSongs-6e6b764f2b4278564c4a-build.zip"
         }
       },
-      "auth": {
-        "readingmood": {}
-      },
       "api": {
         "songApi": {}
+      },
+      "auth": {
+        "readingmood": {}
       }
     }
   }

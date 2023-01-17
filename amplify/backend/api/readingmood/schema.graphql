@@ -1,0 +1,7 @@
+type Testimony @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  body: String
+  avatar: String
+}
+ 
