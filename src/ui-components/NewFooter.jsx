@@ -26,13 +26,12 @@ export default function NewFooter(props) {
       {...rest}
     >
       <NewLogo
-        width="171px"
-        height="32px"
+        width="115.04px"
+        height="35px"
         display="block"
         gap="unset"
         alignItems="unset"
         justifyContent="unset"
-        overflow="hidden"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"

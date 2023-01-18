@@ -11,7 +11,14 @@ export default function FooterLayout({ children }: {children: any}) {
         {children}
       </View>
       <View>
-        <NewFooter width="100%" gap="unset"/>
+        <NewFooter
+          width="100%" gap="unset"
+          overrides={{
+            'NewHero': { width: '100%' },
+            'Frame 28': { width: { base: '90%', medium: '70%' }, marginBottom: { base: '30px', medium: '10px' } },
+            '\u00A9 Copyright piqbubble 2023': {marginTop: '5px'},
+          }}
+        />
       </View>
     </Flex>
   );

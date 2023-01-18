@@ -16,13 +16,12 @@ export default function NewLogo(props) {
   const newLogoOnClick = useNavigateAction({ type: "url", url: "/" });
   return (
     <View
-      width="171px"
-      height="32px"
+      width="115.04px"
+      height="35px"
       display="block"
       gap="unset"
       alignItems="unset"
       justifyContent="unset"
-      overflow="hidden"
       position="relative"
       padding="0px 0px 0px 0px"
       onClick={() => {
@@ -52,10 +51,10 @@ export default function NewLogo(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="43.75%"
-        bottom="20.28%"
-        left="45.03%"
-        right="48.19%"
+        top="48.57%"
+        bottom="18.54%"
+        left="66.93%"
+        right="22.98%"
         {...getOverrideProps(overrides, "Vector36503198")}
       ></Icon>
       <Icon
@@ -79,10 +78,10 @@ export default function NewLogo(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="43.75%"
-        bottom="20.28%"
-        left="52.63%"
-        right="40.59%"
+        top="48.57%"
+        bottom="18.54%"
+        left="78.24%"
+        right="11.68%"
         {...getOverrideProps(overrides, "Vector36563224")}
       ></Icon>
       <Icon
@@ -106,10 +105,10 @@ export default function NewLogo(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="79.73%"
-        bottom="-31.33%"
-        left="67.27%"
-        right="25.69%"
+        top="81.46%"
+        bottom="-28.64%"
+        left="100%"
+        right="-10.46%"
         transformOrigin="top left"
         transform="rotate(180deg)"
         {...getOverrideProps(overrides, "Vector36503200")}
@@ -135,10 +134,10 @@ export default function NewLogo(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="43.75%"
-        bottom="20.96%"
-        left="33.92%"
-        right="55.9%"
+        top="48.57%"
+        bottom="19.16%"
+        left="50.42%"
+        right="34.45%"
         {...getOverrideProps(overrides, "Vector36503203")}
       ></Icon>
       <Icon
@@ -157,10 +156,10 @@ export default function NewLogo(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="0%"
+        top="8.57%"
         bottom="0%"
         left="0%"
-        right="71.35%"
+        right="57.41%"
         {...getOverrideProps(overrides, "Vector36503204")}
       ></Icon>
       <View
@@ -172,10 +171,10 @@ export default function NewLogo(props) {
         justifyContent="unset"
         overflow="hidden"
         position="absolute"
-        top="-9.37%"
-        bottom="3.13%"
-        left="1.75%"
-        right="70.18%"
+        top="0%"
+        bottom="2.86%"
+        left="2.61%"
+        right="55.67%"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "headphones 1")}
       >

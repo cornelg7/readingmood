@@ -13,9 +13,9 @@ export default function NewNav(props) {
   const { name, authText, handleAuth, overrides, ...rest } = props;
   return (
     <Flex
-      gap="352px"
+      gap="370px"
       direction="row"
-      width="1163px"
+      width="638px"
       height="unset"
       justifyContent="space-between"
       alignItems="center"
@@ -26,13 +26,12 @@ export default function NewNav(props) {
       {...rest}
     >
       <NewLogo
-        width="171px"
-        height="32px"
+        width="115.04px"
+        height="35px"
         display="block"
         gap="unset"
         alignItems="unset"
         justifyContent="unset"
-        overflow="hidden"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"

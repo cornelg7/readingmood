@@ -17,7 +17,12 @@ export default function Layout({ children, handleClick, authText, name }: {child
         <View marginLeft="auto" marginRight="auto">
           <NewNav
             width="100%" gap="unset"
-            authText={authText} handleAuth={handleClick} name={name}/>
+            authText={authText} handleAuth={handleClick} name={name}
+            overrides={{
+              'NewLogo': { className: 'cursor-pointer' },
+              'Menu': { width: 'unset' },
+            }}
+          />
           {children}
         </View>
       </FooterLayout>
